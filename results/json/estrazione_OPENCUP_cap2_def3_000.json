@@ -1,0 +1,78 @@
+{
+    "classes": [
+        {
+            "name": "progetto_di_investimento_pubblico",
+            "description": "Determinato progetto di investimento pubblico identificato dal corredo informativo anagrafico e qualificante."
+        },
+        {
+            "name": "corredo_informativo",
+            "description": "Insieme dei dati anagrafici e qualificanti dell'investimento che identificano in modo non ambiguo un progetto."
+        },
+        {
+            "name": "atto_amministrativo",
+            "description": "Atto in cui è registrata la decisione di realizzare il progetto."
+        },
+        {
+            "name": "soggetto_responsabile",
+            "description": "Soggetto che assume la decisione di realizzare il progetto."
+        },
+        {
+            "name": "quadro_economico_spesa",
+            "description": "Specifico quadro economico di spesa associato al progetto."
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "ha_corredo_informativo",
+            "domain": "progetto_di_investimento_pubblico",
+            "range": "corredo_informativo"
+        },
+        {
+            "label": "registrato_in",
+            "domain": "progetto_di_investimento_pubblico",
+            "range": "atto_amministrativo"
+        },
+        {
+            "label": "decisione_assunta_da",
+            "domain": "progetto_di_investimento_pubblico",
+            "range": "soggetto_responsabile"
+        },
+        {
+            "label": "ha_quadro_economico_spesa",
+            "domain": "progetto_di_investimento_pubblico",
+            "range": "quadro_economico_spesa"
+        }
+    ],
+    "data_properties": [
+        {
+            "label": "descrizione_testuale",
+            "domain": "corredo_informativo",
+            "range": "string"
+        },
+        {
+            "label": "costo_complessivo_programmato",
+            "domain": "corredo_informativo",
+            "range": "decimal"
+        },
+        {
+            "label": "amministrazione_titolare",
+            "domain": "corredo_informativo",
+            "range": "string"
+        },
+        {
+            "label": "localizzazione_fisica",
+            "domain": "corredo_informativo",
+            "range": "string"
+        },
+        {
+            "label": "settore_intervento",
+            "domain": "corredo_informativo",
+            "range": "string"
+        },
+        {
+            "label": "finalita",
+            "domain": "corredo_informativo",
+            "range": "string"
+        }
+    ]
+}

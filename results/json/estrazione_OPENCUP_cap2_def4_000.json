@@ -1,0 +1,71 @@
+{
+    "classes": [
+        {
+            "name": "cup",
+            "description": "Codice alfanumerico univoco, costituito da quindici caratteri, che identifica ciascun intervento/progetto di investimento pubblico"
+        },
+        {
+            "name": "intervento_progetto_investimento_pubblico",
+            "description": "Intervento o progetto di investimento pubblico identificato dal CUP"
+        },
+        {
+            "name": "amministrazione_titolare",
+            "description": "Soggetto responsabile dell’associazione del CUP agli interventi/progetti di investimento pubblico"
+        },
+        {
+            "name": "soggetto_attuatore",
+            "description": "Soggetto attuatore degli interventi/progetti di investimento pubblico"
+        },
+        {
+            "name": "sistema_informativo_cup",
+            "description": "Sistema informativo presso cui viene generato il CUP previo accreditamento"
+        },
+        {
+            "name": "banca_dati",
+            "description": "Banche dati contenenti informazioni sullo stato di attuazione degli investimenti pubblici"
+        },
+        {
+            "name": "documento_amministrativo_contabile",
+            "description": "Documenti amministrativi e contabili, cartacei e informatici, relativi a progetti d’investimento pubblico"
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "identifica",
+            "domain": "cup",
+            "range": "intervento_progetto_investimento_pubblico"
+        },
+        {
+            "label": "associato_da",
+            "domain": "cup",
+            "range": "amministrazione_titolare"
+        },
+        {
+            "label": "associato_da",
+            "domain": "cup",
+            "range": "soggetto_attuatore"
+        },
+        {
+            "label": "generato_in",
+            "domain": "cup",
+            "range": "sistema_informativo_cup"
+        },
+        {
+            "label": "rende_interoperabili",
+            "domain": "cup",
+            "range": "banca_dati"
+        },
+        {
+            "label": "riportato_su",
+            "domain": "cup",
+            "range": "documento_amministrativo_contabile"
+        }
+    ],
+    "data_properties": [
+        {
+            "label": "codice_cup",
+            "domain": "cup",
+            "range": "string (alfanumerico, 15 caratteri)"
+        }
+    ]
+}

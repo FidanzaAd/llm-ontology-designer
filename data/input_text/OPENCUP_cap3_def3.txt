@@ -1,0 +1,82 @@
+Per Intervento si intende un complesso di azioni o di strumenti di sostegno collegati fra loro per la realizzazione di un intervento di investimento pubblico costituito da quattro requisiti:
+1) presenza di un decisore pubblico;
+2) finanziamento - anche parziale, diretto o indiretto - con risorse pubbliche o con l’uso di strutture pubbliche per la realizzazione del progetto;
+3) le azioni o gli strumenti suddetti hanno un comune obiettivo di sviluppo economico e sociale;
+4) da raggiungere entro un tempo specificato. Il Progetto può essere classificato in funzione della sua natura: lavori pubblici; concessione incentivi; concessione contributi; acquisto di beni; acquisto o realizzazione di servizi; aumenti di capitale A livello funzionale, l’intervento può essere visto come l’unità minima operativa di un progetto.
+
+Dati e caratteristiche dell’intervento
+- Natura, sul Sistema CUP è rappresentata da una Lista a scelta singola contenente le nature disponibili. La selezione del campo è obbligatoria. Evidenzia il tipo di “azione” in cui consiste il progetto. È il primo dei due livelli (natura e tipologia – classificazione con relativi codici).
+Codifica assegnata alla Natura dell'intervento (n. 6):
+	o Acquisto di beni: il progetto consiste nella decisione di un ente pubblico di acquistare dei beni «durevoli» (macchinari di un ospedale, sedi o arredi per uffici amministrativi) con il pagamento, da parte dell’ente, dei costi richiesti dal venditore; il CUP è richiesto dall’ente;
+	o Acquisto o realizzazione di servizi:
+		- acquisto di servizi: il progetto consiste nella decisione di un ente pubblico di acquistare un servizio di sviluppo (un progetto di ricerca, l’adeguamento di un software, un corso di formazione) con il pagamento, da parte dell’ente, dei costi richiesti dal venditore; il CUP è richiesto dall’ente;
+		- realizzazione di servizi: il progetto consiste nella decisione di un ente pubblico di realizzare un servizio di sviluppo (un progetto di ricerca, l’adeguamento di un software, un corso di formazione) con il pagamento, da parte dell’ente, dei costi connessi alle attività realizzative; il CUP è richiesto dall’ente. Rientrano in questa casistica i servizi di progettazione di opere pubbliche, se tali attività sono definite in relazione a un quadro economico di spesa specifico, distinto dalla realizzazione dell’opera;
+	o Realizzazione di lavori pubblici (opera ed impiantistica): il progetto consiste nella decisione di un ente (stazione appaltante) di far realizzare un intervento infrastrutturale (una nuova strada, la manutenzione di una scuola, l’ampliamento di un ospedale) con il pagamento, da parte della stazione appaltante, della impresa/delle imprese che lo realizzano. Il CUP è generalmente associato alla realizzazione del lotto funzionale ove previsto; il CUP è richiesto dalla stazione appaltante;
+	o Concessione di contributi ad altri soggetti (diversi da unità produttive): il progetto consiste nella decisione di un ente pubblico di aiutare un privato a realizzare un intervento di sviluppo (riparare un’abitazione dopo una calamità naturale, seguire un percorso formativo) con il pagamento, da parte dell’ente, di una parte o della totalità dei costi previsti; il CUP è richiesto dall’ente;
+	o Concessione di incentivi ad unità produttive: il progetto consiste nella decisione di un ente pubblico
+	di concedere un finanziamento a un’impresa per realizzare un intervento di sviluppo (un nuovo stabilimento, la manutenzione di una fabbrica, l’ampliamento di un magazzino) con il pagamento, da parte dell’ente, di parte - o della totalità - dei costi previsti dall’impresa; il CUP è richiesto dall’ente;
+	o Sottoscrizione iniziale o aumento di capitale sociale (compresi spin off), fondi di rischio o di gara.
+Codifica assegnata alla Natura DIPE (n. 8)
+	 AB - Acquisto di beni
+	 SS - Servizi
+	 CF - Corsi di formazione
+	 PR - Progetti di ricerca
+	 LP - Lavori pubblici
+	 CS - Contributi (per calamità e altro)
+	 II - Incentivi
+	 ST - Strumenti finanziari
+	
+- Tipologia della natura: Lista a scelta singola contenente le tipologie associate alla natura selezionata. Caratterizza la natura precedentemente selezionata (n. 81 tipologie – vocabolario)
+
+- Area di intervento: Lista a scelta singola contenente le aree d’intervento compatibilmente alla natura selezionata. La selezione del campo è obbligatoria. Individua le categorie omogenee con cui è possibile descrivere "l'oggetto progettuale" (n. 6 aree – Classificazione con relativi codici):
+	- 01 – Immobili
+	- 02 – Trasporti
+	- 03 – Ambiente ed energia
+	- 04 – Aree produttive
+	- 05 – Ricerca, ITC, formazione ed altro
+	- 06 – Servizi per la P.A. e per la collettività
+o Settore (n. 11): caratterizza l’area precedentemente selezionata (scelta singola)
+o Sottosettore (n. 63): caratterizza ulteriormente il settore precedentemente selezionato (scelta singola)
+o Categoria (n. 405): caratterizza ulteriormente il sottosettore precedentemente selezionato (scelta singola)
+
+- Indirizzo/area di riferimento: indirizzo della struttura/infrastruttura oggetto dell’intervento, oppure l’area del progetto
+
+- Descrizione: Descrive il tipo di intervento da realizzare
+
+In base alla Natura, la Tipologia dell’intervento cambia la descrizione (corredo informativo e caratteristiche specifiche)
+- Acquisto di beni – […]:
+	o Opera/infrastruttura interessata dal progetto: Campo editabile contenente per esteso, la denominazione della struttura / infrastruttura cui sono destinati i beni, ovvero, laddove questa non sia individuabile, una  descrizione generica dell’area interessata dal progetto
+	o Bene: Campo editabile contenente la descrizione del bene oggetto dell’acquisto: es. “nuovi arredi didattici”, ecc.
+- Acquisto o realizzazione di servizi – […]:
+	o Opera infrastruttura o area interessata dal progetto: Campo editabile contenente, per esteso, la denominazione della struttura / infrastruttura cui il servizio è funzionale, ovvero, laddove questa non sia individuabile, una descrizione generica dell’area interessata dal progetto
+	o Servizio: Campo editabile contenente la descrizione del servizio da acquistare/realizzare, es. “servizio straordinario di pulizia stradale”, “studio di fattibilità per nuova scuola elementare”, ecc.
+	 Acquisto o realizzazione di servizi – progetti di ricerca
+		o Denominazione del progetto
+		o Ente: Campo editabile contenente, per esteso, la denominazione dell’ente che realizza il progetto di ricerca, che potrebbe o meno coincidere con il Soggetto Titolare
+		o Descrizione dell’intervento: Campo editabile contenente, per esteso, la descrizione della ricerca da realizzare, es. “Cellule staminali: utilizzo in campo medico per la ricostruzione di tessuto epidermico”, ecc.
+	 Acquisto o realizzazione di servizi – corsi di formazione
+		o Denominazione del progetto
+		o Denominazione ente che realizza il corso
+		o Obiettivo del corso: Campo editabile in cui specificare in cosa consiste il corso di formazione: a chi è rivolto, materia trattata, ecc; es. “corso per apprendisti artigiani sulla lavorazione del legno”, ecc.
+		o Modalità dell’intervento: Campo editabile contenente, per esteso, le modalità del corso in termini di durata, frequenza, ecc.
+- Realizzazione di lavori pubblici – opere ed impiantistica:
+	o Strutture/infrastrutture coinvolte: Indica se il progetto coinvolge una o più strutture / infrastrutture. Questo campo deve essere impostato a “una” se il progetto riguarda un’unica struttura / infrastruttura (es. una strada, una scuola, un aeroporto, un complesso sportivo); altrimenti, se il progetto interessa diverse strutture (es. “strade comunali” o “scuole elementari”), il valore da impostare è “più di una”.
+	o Oggetto progettuale: Questo campo deve contenere, per esteso, la denominazione della struttura / infrastruttura interessata dal progetto; esempi: scuola media Alessandro Manzoni o aeroporto Leonardo da Vinci. Nel caso di più infrastrutture si può ricorrere ad una denominazione generica; esempio: scuole comunali.
+- Concessione di contributi ad altri soggetti – […]:
+	o Codice fiscale: Campo editabile contenente per esteso il codice fiscale del Soggetto beneficiario
+	o Nome infrastruttura interessata dal progetto: Campo editabile contenente, per esteso, la denominazione della struttura interessata dal progetto, o almeno una sua descrizione (per esempio: edificio privato ricadente nel centro storico). Laddove questa non sia individuabile, una descrizione generica dell’area interessata dal progetto
+	o Denominazione del beneficiario: Campo editabile contenente, per esteso, la denominazione della persona giuridica o fisica beneficiaria del contributo, es. Fondazione Mare Blu, Mario Bianchi. Si collega ad ATECO per classificazione del settore economico del beneficiario
+- Concessione di incentivi ad unità produttive – […]:
+	o Partita IVA: dell’impresa/stabilimento beneficiaria/o
+	o Denominazione impresa/stabilimento. Si collega ad ATECO per classificazione del settore economico del beneficiario
+- Sottoscrizione iniziale o aumento di capitale sociale, fondi di rischio o di garanzia
+	o Partita IVA: della società
+	o Ragione sociale dell’azienda oggetto della partecipazione o conferimento:
+	Campo editabile contenente per esteso, la denominazione della società interessata dalla partecipazione o dal conferimento di capitali (es.: Alfa Servizi spa)
+	o Finalità della partecipazione o del conferimento: Lista a scelta singola contenente la finalità della partecipazione / conferimento di capitale. Si collega ad ATECO per classificazione del settore economico del beneficiario
+
+Inoltre, esistono relazioni tra:
+- Natura dell’intervento e Natura DIPE, ad esempio che la Natura 02, Acquisto o realizzazione di servizi, si lega a 3 tipi di Natura DIPE: SS – Servizi, CF - Corsi di formazione e PR - Progetti di ricerca; tutte le altre Nature di intervento hanno un solo corrispettivo Natura DIPE.
+- Area e Settore, ad esempio un Area può avere più settori, le aree 04 e 05 hanno 4 Settori, le altre solo 1 corrispondente. Il Settore 06 è valorizzabile tanto con l’Area 04 che con l’Area 05.
+- Natura e Tipologia, ad una Natura possono associarsi più Tipologie, ad una Tipologia più Nature (es.: Tipologia Intervento – 01 - Nuova Realizzazione -> Natura Intervento – 03 - Realizzazione di lavori pubblici (opera ed impiantistica) e 07 - Concessione di incentivi ad unità produttive)
+- Natura e Settore: per la natura 03 - realizzazione di lavori pubblici (opere ed impiantistica) non sono valorizzabili i settori 09 (servizi alle imprese) e 10 (servizi per la p.a. e per la collettività). per le nature 06 - concessione di contributi ad altri soggetti (diversi da unità produttive) e 07 - concessione di incentivi ad unità produttive non è valorizzabile il settore 10 (servizi per la p.a. e per la collettività).

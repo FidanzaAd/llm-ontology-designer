@@ -1,0 +1,100 @@
+{
+    "classes": [
+        {
+            "name": "sistema_di_monitoraggio_degli_investimenti_pubblici",
+            "description": "Sistema istituito presso il CIPESS per fornire informazioni sull'attuazione delle politiche di sviluppo"
+        },
+        {
+            "name": "comitato_interministeriale_per_la_programmazione_economica",
+            "description": "Comitato presso cui è istituito il Sistema di monitoraggio degli investimenti pubblici"
+        },
+        {
+            "name": "politiche_di_sviluppo",
+            "description": "Ambito delle informazioni fornite dal sistema di monitoraggio"
+        },
+        {
+            "name": "programmi_cofinanziati_con_fondi_strutturali_europei",
+            "description": "Programmi oggetto di monitoraggio specifico"
+        },
+        {
+            "name": "fondi_strutturali_europei",
+            "description": "Fondi che cofinanziano i programmi monitorati"
+        },
+        {
+            "name": "attivita_di_monitoraggio",
+            "description": "Attività riguardante modalità attuative dei programmi di investimento e avanzamenti tecnico-procedurali, finanziari e fisici degli interventi"
+        },
+        {
+            "name": "programmi_di_investimento",
+            "description": "Programmi le cui modalità attuative sono oggetto di monitoraggio"
+        },
+        {
+            "name": "intervento",
+            "description": "Singoli interventi monitorati nei loro avanzamenti"
+        },
+        {
+            "name": "soggetto_attuatore",
+            "description": "Soggetto pubblico o privato che provvede alla realizzazione degli interventi previsti dal PNRR"
+        },
+        {
+            "name": "soggetto_pubblico"
+        },
+        {
+            "name": "soggetto_privato"
+        },
+        {
+            "name": "soggetto_titolare_di_progetto",
+            "description": "Soggetto cui compete l'attuazione degli interventi e responsabile della richiesta del CUP"
+        },
+        {
+            "name": "stazione_appaltante",
+            "description": "Soggetto titolare per la realizzazione dei lavori pubblici",
+            "is_a": "soggetto_titolare_di_progetto"
+        },
+        {
+            "name": "concessionario",
+            "description": "Soggetto titolare per la realizzazione dei lavori pubblici",
+            "is_a": "soggetto_titolare_di_progetto"
+        },
+        {
+            "name": "comune",
+            "description": "Soggetto titolare per la realizzazione dei lavori pubblici",
+            "is_a": "soggetto_titolare_di_progetto"
+        },
+        {
+            "name": "unita_produttiva",
+            "description": "Beneficiario degli incentivi concessi"
+        },
+        {
+            "name": "ente_pubblico",
+            "description": "Ente titolare della concessione o della decisione di spesa"
+        },
+        {
+            "name": "soggetto_concentratore",
+            "description": "Soggetto pubblico abilitato alla richiesta del CUP su delega del soggetto titolare"
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "is_a",
+            "domain": "stazione_appaltante",
+            "range": "soggetto_titolare_di_progetto"
+        },
+        {
+            "label": "is_a",
+            "domain": "concessionario",
+            "range": "soggetto_titolare_di_progetto"
+        },
+        {
+            "label": "is_a",
+            "domain": "comune",
+            "range": "soggetto_titolare_di_progetto"
+        },
+        {
+            "label": "realizza_interventi",
+            "domain": "soggetto_attuatore",
+            "range": "intervento"
+        }
+    ],
+    "data_properties": []
+}

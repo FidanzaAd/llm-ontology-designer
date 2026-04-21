@@ -1,0 +1,112 @@
+{
+    "classes": [
+        {
+            "name": "atto_amministrativo",
+            "description": "Atto adottato da una pubblica amministrazione"
+        },
+        {
+            "name": "atto_amministrativo_di_investimento_pubblico",
+            "description": "Atto amministrativo anche di natura regolamentare che dispone il finanziamento pubblico o autorizza l'esecuzione di progetti di investimento pubblico"
+        },
+        {
+            "name": "pubblica_amministrazione",
+            "description": "Soggetto di cui all’art. 1, comma 2, d. lgs. n. 165/2001"
+        },
+        {
+            "name": "progetto_di_investimento_pubblico",
+            "description": "Progetto finanziato o autorizzato tramite un atto amministrativo di investimento pubblico"
+        },
+        {
+            "name": "codice_unico_progetto",
+            "description": "Codice che permette di tracciare e monitorare il progetto di investimento pubblico"
+        },
+        {
+            "name": "programma_di_spesa",
+            "description": "Programma cui sono autorizzati i progetti tramite l’atto amministrativo"
+        },
+        {
+            "name": "finanziamento_pubblico",
+            "description": "Finanziamenti concessi a valere sulle misure indicate nell’atto amministrativo"
+        },
+        {
+            "name": "delibera",
+            "description": "Forma in cui può esplicarsi l’atto amministrativo"
+        },
+        {
+            "name": "provvedimento_dirigenziale",
+            "description": "Forma in cui può esplicarsi l’atto amministrativo"
+        },
+        {
+            "name": "decreto",
+            "description": "Forma in cui può esplicarsi l’atto amministrativo"
+        },
+        {
+            "name": "provvedimento_approvazione_graduatorie",
+            "description": "Forma in cui può esplicarsi l’atto amministrativo"
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "is_a",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "atto_amministrativo"
+        },
+        {
+            "label": "is_a",
+            "domain": "delibera",
+            "range": "atto_amministrativo"
+        },
+        {
+            "label": "is_a",
+            "domain": "provvedimento_dirigenziale",
+            "range": "atto_amministrativo"
+        },
+        {
+            "label": "is_a",
+            "domain": "decreto",
+            "range": "atto_amministrativo"
+        },
+        {
+            "label": "is_a",
+            "domain": "provvedimento_approvazione_graduatorie",
+            "range": "atto_amministrativo"
+        },
+        {
+            "label": "adottato_da",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "pubblica_amministrazione"
+        },
+        {
+            "label": "dispone_finanziamento",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "finanziamento_pubblico"
+        },
+        {
+            "label": "autorizza_esecuzione",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "progetto_di_investimento_pubblico"
+        },
+        {
+            "label": "associa_cup",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "codice_unico_progetto"
+        },
+        {
+            "label": "autorizza_programma_di_spesa",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "programma_di_spesa"
+        }
+    ],
+    "data_properties": [
+        {
+            "label": "data_efficacia_finanziamenti",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "string"
+        },
+        {
+            "label": "valore_complessivo_investimento",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "string"
+        }
+    ]
+}

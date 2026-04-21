@@ -1,0 +1,47 @@
+{
+    "classes": [
+        {
+            "name": "cup",
+            "description": "Codice Unico di Progetto nell'ambito degli investimenti pubblici"
+        },
+        {
+            "name": "cup_valido",
+            "description": "CUP definitivo generato ed esistente all’interno del sistema informativo CUP"
+        },
+        {
+            "name": "cup_corretto",
+            "description": "CUP definitivo allegato ad un atto di finanziamento/autorizzazione di investimenti pubblici, che identifica un intervento/progetto che l’amministrazione titolare manifesta di voler realizzare"
+        },
+        {
+            "name": "cup_coerente_con_il_programma_di_spesa",
+            "description": "CUP allegato ad un atto amministrativo la cui classificazione rispetta i vincoli disposti dalla normativa che regola il programma di spesa"
+        },
+        {
+            "name": "cup_provvisorio",
+            "description": "CUP facoltativo, privo di rilevanza amministrativa, utilizzato per censire il progetto sin dalla fase ideativa; contiene un carattere in meno del CUP definitivo e inizia con PROV"
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "is_a",
+            "domain": "cup_valido",
+            "range": "cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "cup_corretto",
+            "range": "cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "cup_coerente_con_il_programma_di_spesa",
+            "range": "cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "cup_provvisorio",
+            "range": "cup"
+        }
+    ],
+    "data_properties": []
+}

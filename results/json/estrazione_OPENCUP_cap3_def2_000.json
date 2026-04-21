@@ -1,0 +1,348 @@
+{
+    "classes": [
+        {
+            "name": "progetto_investimento_pubblico",
+            "description": "Complesso di azioni o strumenti di sostegno collegati fra loro per la realizzazione di un intervento di investimento pubblico costituito da quattro requisiti."
+        },
+        {
+            "name": "decisore_pubblico",
+            "description": "Presenza di un decisore pubblico."
+        },
+        {
+            "name": "finanziamento_pubblico",
+            "description": "Finanziamento anche parziale, diretto o indiretto con risorse pubbliche o con l’uso di strutture pubbliche."
+        },
+        {
+            "name": "obiettivo_sviluppo",
+            "description": "Obiettivo comune di sviluppo economico e sociale."
+        },
+        {
+            "name": "classificazione_progetto",
+            "description": "Classificazione del progetto in funzione della sua natura."
+        },
+        {
+            "name": "lavori_pubblici",
+            "is_a": "classificazione_progetto"
+        },
+        {
+            "name": "concessione_incentivi",
+            "is_a": "classificazione_progetto"
+        },
+        {
+            "name": "concessione_contributi",
+            "is_a": "classificazione_progetto"
+        },
+        {
+            "name": "acquisto_beni",
+            "is_a": "classificazione_progetto"
+        },
+        {
+            "name": "acquisto_servizi",
+            "is_a": "classificazione_progetto"
+        },
+        {
+            "name": "aumento_capitale",
+            "is_a": "classificazione_progetto"
+        },
+        {
+            "name": "localizzazione",
+            "description": "Dati geografici del progetto."
+        },
+        {
+            "name": "stato"
+        },
+        {
+            "name": "area_geografica"
+        },
+        {
+            "name": "regione"
+        },
+        {
+            "name": "provincia"
+        },
+        {
+            "name": "comune"
+        },
+        {
+            "name": "localizzazione_specifica"
+        },
+        {
+            "name": "finanza_di_progetto",
+            "description": "Operazione di finanza strutturata finalizzata in genere alla realizzazione di infrastrutture."
+        },
+        {
+            "name": "copertura_finanziaria"
+        },
+        {
+            "name": "strumento_programmazione",
+            "description": "Eventuale riconducibilità del progetto ad uno strumento di programmazione negoziata o altro."
+        },
+        {
+            "name": "normativa_riferimento",
+            "description": "Norma o atto normativo alla base del finanziamento del progetto."
+        },
+        {
+            "name": "beneficiario"
+        },
+        {
+            "name": "soggetto_titolare"
+        },
+        {
+            "name": "soggetto_attuatore"
+        },
+        {
+            "name": "unita_organizzativa"
+        },
+        {
+            "name": "responsabile_procedimento"
+        },
+        {
+            "name": "progettista_opera"
+        },
+        {
+            "name": "direttore_lavori"
+        },
+        {
+            "name": "collaudatore"
+        },
+        {
+            "name": "organismo_controllo"
+        },
+        {
+            "name": "ente_finanziatore"
+        },
+        {
+            "name": "tematica_pnrr"
+        },
+        {
+            "name": "sub_investimento"
+        },
+        {
+            "name": "target"
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "has_decisore_pubblico",
+            "domain": "progetto_investimento_pubblico",
+            "range": "decisore_pubblico"
+        },
+        {
+            "label": "has_finanziamento_pubblico",
+            "domain": "progetto_investimento_pubblico",
+            "range": "finanziamento_pubblico"
+        },
+        {
+            "label": "has_obiettivo_sviluppo",
+            "domain": "progetto_investimento_pubblico",
+            "range": "obiettivo_sviluppo"
+        },
+        {
+            "label": "has_classificazione",
+            "domain": "progetto_investimento_pubblico",
+            "range": "classificazione_progetto"
+        },
+        {
+            "label": "has_localizzazione",
+            "domain": "progetto_investimento_pubblico",
+            "range": "localizzazione"
+        },
+        {
+            "label": "has_finanza_di_progetto",
+            "domain": "progetto_investimento_pubblico",
+            "range": "finanza_di_progetto"
+        },
+        {
+            "label": "has_copertura_finanziaria",
+            "domain": "progetto_investimento_pubblico",
+            "range": "copertura_finanziaria"
+        },
+        {
+            "label": "has_strumento_programmazione",
+            "domain": "progetto_investimento_pubblico",
+            "range": "strumento_programmazione"
+        },
+        {
+            "label": "has_normativa_riferimento",
+            "domain": "progetto_investimento_pubblico",
+            "range": "normativa_riferimento"
+        },
+        {
+            "label": "has_beneficiario",
+            "domain": "progetto_investimento_pubblico",
+            "range": "beneficiario"
+        },
+        {
+            "label": "has_soggetto_titolare",
+            "domain": "progetto_investimento_pubblico",
+            "range": "soggetto_titolare"
+        },
+        {
+            "label": "has_soggetto_attuatore",
+            "domain": "progetto_investimento_pubblico",
+            "range": "soggetto_attuatore"
+        },
+        {
+            "label": "has_unita_organizzativa",
+            "domain": "progetto_investimento_pubblico",
+            "range": "unita_organizzativa"
+        },
+        {
+            "label": "has_responsabile_procedimento",
+            "domain": "progetto_investimento_pubblico",
+            "range": "responsabile_procedimento"
+        },
+        {
+            "label": "has_progettista_opera",
+            "domain": "progetto_investimento_pubblico",
+            "range": "progettista_opera"
+        },
+        {
+            "label": "has_direttore_lavori",
+            "domain": "progetto_investimento_pubblico",
+            "range": "direttore_lavori"
+        },
+        {
+            "label": "has_collaudatore",
+            "domain": "progetto_investimento_pubblico",
+            "range": "collaudatore"
+        },
+        {
+            "label": "has_organismo_controllo",
+            "domain": "progetto_investimento_pubblico",
+            "range": "organismo_controllo"
+        },
+        {
+            "label": "has_ente_finanziatore",
+            "domain": "progetto_investimento_pubblico",
+            "range": "ente_finanziatore"
+        },
+        {
+            "label": "has_tematica_pnrr",
+            "domain": "progetto_investimento_pubblico",
+            "range": "tematica_pnrr"
+        },
+        {
+            "label": "has_sub_investimento",
+            "domain": "tematica_pnrr",
+            "range": "sub_investimento"
+        },
+        {
+            "label": "has_target",
+            "domain": "sub_investimento",
+            "range": "target"
+        }
+    ],
+    "data_properties": [
+        {
+            "label": "anno_decisione",
+            "domain": "progetto_investimento_pubblico",
+            "range": "string"
+        },
+        {
+            "label": "cup",
+            "domain": "progetto_investimento_pubblico",
+            "range": "string"
+        },
+        {
+            "label": "data_chiusura_prevista",
+            "domain": "progetto_investimento_pubblico",
+            "range": "string"
+        },
+        {
+            "label": "codice_stato",
+            "domain": "stato",
+            "range": "string"
+        },
+        {
+            "label": "codice_area",
+            "domain": "area_geografica",
+            "range": "string"
+        },
+        {
+            "label": "codice_regione",
+            "domain": "regione",
+            "range": "string"
+        },
+        {
+            "label": "codice_provincia",
+            "domain": "provincia",
+            "range": "string"
+        },
+        {
+            "label": "codice_comune",
+            "domain": "comune",
+            "range": "string"
+        },
+        {
+            "label": "compensi_contributi_sponsorizzazioni",
+            "domain": "progetto_investimento_pubblico",
+            "range": "string"
+        },
+        {
+            "label": "costo_totale_progetto",
+            "domain": "progetto_investimento_pubblico",
+            "range": "decimal"
+        },
+        {
+            "label": "importo_finanziamento_pubblico",
+            "domain": "progetto_investimento_pubblico",
+            "range": "decimal"
+        },
+        {
+            "label": "tipo_strumento_programmazione",
+            "domain": "strumento_programmazione",
+            "range": "string"
+        },
+        {
+            "label": "legge_obiettivo",
+            "domain": "progetto_investimento_pubblico",
+            "range": "string"
+        },
+        {
+            "label": "numero_delibera_cipe",
+            "domain": "progetto_investimento_pubblico",
+            "range": "string"
+        },
+        {
+            "label": "anno_delibera",
+            "domain": "progetto_investimento_pubblico",
+            "range": "string"
+        },
+        {
+            "label": "codifica_locale",
+            "domain": "progetto_investimento_pubblico",
+            "range": "string"
+        },
+        {
+            "label": "tipo_norma",
+            "domain": "normativa_riferimento",
+            "range": "string"
+        },
+        {
+            "label": "descrizione_norma",
+            "domain": "normativa_riferimento",
+            "range": "string"
+        },
+        {
+            "label": "anno_norma",
+            "domain": "normativa_riferimento",
+            "range": "string"
+        },
+        {
+            "label": "numero_norma",
+            "domain": "normativa_riferimento",
+            "range": "string"
+        },
+        {
+            "label": "articolo_norma",
+            "domain": "normativa_riferimento",
+            "range": "string"
+        },
+        {
+            "label": "comma_norma",
+            "domain": "normativa_riferimento",
+            "range": "string"
+        }
+    ]
+}

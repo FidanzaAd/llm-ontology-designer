@@ -1,0 +1,69 @@
+
+Soggetto titolare/responsabile: soggetto cui compete l'attuazione degli interventi e, quindi, responsabile della richiesta del CUP.
+- Denominazione: contiene il nome del soggetto selezionato
+- Categoria: Denominazione della Categoria del Soggetto titolare, con cui è classificato il soggetto nell'ambito del Sistema CUP. (+ codice_categoria)
+- Sottocategoria: Denominazione della sottocategoria del Soggetto titolare, specifica ulteriormente la categoria. (+ codice_sottocategoria)
+- Area: Denominazione dell'Area in cui è classificato il Soggetto titolare nell'ambito di OpenCUP: Altro, Aministrazioni centrali, Amministrazioni locali (+codice_area)
+- Natura della Persona Giuridica: dà la possibilità di specificare se il soggetto di appartenenza è pubblico o privato
+- Codice Fiscale/Partita IVA: contiene il campo identificativo fiscale del soggetto selezionato
+- Localizzazione
+	o Tipo indirizzo: contiene il tipo indirizzo del soggetto selezionato
+	o Indirizzo: contiene l’indirizzo del soggetto
+	o Civico: contiene il Civico del soggetto selezionato
+	o Località: contiene la località del soggetto selezionato
+	o Provincia: contiene la denominazione della provincia del soggetto selezionato
+	o Comune: contiene la denominazione del comune del soggetto selezionato
+	o CAP: contiene il CAP del soggetto selezionato
+Nota: se non esplicitamente indicato, il soggetto titolare corrisponde al soggetto richiedente.
+
+Soggetto concentratore: soggetto pubblico abilitato a svolgere le funzioni di richiesta del CUP su delega del soggetto titolare, sulla base di specifici accordi e dandone evidenza nel sistema, ferme restando le responsabilità del titolare per quanto concerne l’obbligo di richiesta di assegnazione del CUP e la correttezza dei dati inseriti nel sistema; è caratterizzato da:
+- Denominazione: contiene il nome del soggetto selezionato
+- Categoria: contiene la categoria del soggetto selezionato
+- Sottocategoria: contiene la sottocategoria del soggetto selezionato
+- Natura della Persona Giuridica: dà la possibilità di specificare se il soggetto di appartenenza è pubblico o privato
+- Codice Fiscale/Partita IVA: contiene il campo identificativo fiscale del soggetto selezionato
+- Localizzazione
+	o Tipo indirizzo: contiene il tipo indirizzo del soggetto selezionato
+	o Indirizzo: contiene l’indirizzo del soggetto
+	o Civico: contiene il Civico del soggetto selezionato
+	o Località: contiene la località del soggetto selezionato
+	o Provincia: contiene la denominazione della provincia del soggetto selezionato
+	o Comune: contiene la denominazione del comune del soggetto selezionato
+	o CAP: contiene il CAP del soggetto selezionato
+- Delega di richiesta CUP, contenente i seguenti dati:
+	- Numero delega
+	- Denominazione del soggetto concentratore
+	- Denominazione del soggetto responsabile
+	- Tipo delega (totale o parziale)
+	- Data inserimento
+	- Data modifica
+	- Stato della delega
+
+Soggetto beneficiario: soggetto pubblico o privato che, ai sensi delle norme dispositive relative ai programmi di spesa, beneficia di finanziamento per specifici progetti di investimento; è caratterizzato da:
+	- Denominazione: contiene il nome del soggetto selezionato
+	- Natura della Persona Giuridica: dà la possibilità di specificare se il soggetto di appartenenza è pubblico o privato
+	- Codice Fiscale/Partita IVA: contiene il campo identificativo fiscale del soggetto selezionato
+	- Associato ad un codice ATECO
+Il soggetto beneficiario può coincidere con il soggetto titolare.
+
+Utente: persona fisica che interagisce con il sistema, e che può accreditarsi al sistema come “generatore” (se vuole essere in grado di interagire con il sistema CUP per richiedere codici, ad esempio, o richiedere la modifica del corredo informativo, o approvare la relativa proposta di modifica), o come “lettore” (se è interessato solo ad accedere alla banca dati del sistema per vederne il contenuto).
+Si possono definire tre tipologie di utenti generatori:
+	- “utente richiedente”: fisso nel tempo, è l’utente (che si è registrato al sistema come utente generatore) che ha richiesto il CUP. Può far capo ad un soggetto responsabile o ad un soggetto concentratore;
+	- “utente di riferimento”: variabile nel tempo, è l’utente (che si è registrato al sistema come utente generatore) che interagisce con il sistema CUP per informazioni o per la manutenzione del corredo informativo di progetti attivi. Fa capo al soggetto responsabile;
+	- “utente ultima modifica”: variabile nel tempo, è l’utente che, per ultimo, ha corretto i dati del corredo informativo di un progetto, ovvero li ha integrati (nel caso di chiusura o di revoca di un progetto).
+All’atto della richiesta di un CUP possono verificarsi queste due condizioni:
+	- un utente, facente capo ad un soggetto responsabile, richiede un codice per conto di detto soggetto responsabile: l’utente richiedente coincide con l’utente di riferimento;
+	- un utente, facente capo ad un soggetto concentratore, richiede un codice per conto di altro soggetto: l’utente richiedente è diverso dall’utente di riferimento.
+
+Unità organizzativa: servizio a cui appartiene l’utente che interagisce con il sistema CUP; è caratterizzata da:
+- Denominazione: contiene il nome del soggetto selezionato
+- Codice Fiscale/Partita IVA: contiene il campo identificativo fiscale del soggetto selezionato
+- Localizzazione
+	o Tipo indirizzo: contiene il tipo indirizzo del soggetto selezionato
+	o Indirizzo: contiene l’indirizzo del soggetto
+	o Civico: contiene il Civico del soggetto selezionato
+	o Località: contiene la località del soggetto selezionato
+	o Provincia: contiene la denominazione della provincia del soggetto selezionato
+	o Comune: contiene la denominazione del comune del soggetto selezionato
+	o CAP: contiene il CAP del soggetto selezionato
+- E-mail (facoltativa)

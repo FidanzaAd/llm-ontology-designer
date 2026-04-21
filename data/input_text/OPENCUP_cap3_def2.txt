@@ -1,0 +1,66 @@
+Progetto di investimento pubblico: complesso di azioni o di strumenti di sostegno collegati fra loro per la realizzazione di un intervento di investimento pubblico costituito da quattro requisiti:
+1) presenza di un decisore pubblico;
+2) finanziamento - anche parziale, diretto o indiretto - con risorse pubbliche o con l’uso di strutture pubbliche per la realizzazione del progetto;
+3) le azioni o gli strumenti suddetti hanno un comune obiettivo di sviluppo economico e sociale;
+4) da raggiungere entro un tempo specificato. Il Progetto può essere classificato in funzione della sua natura: lavori pubblici; concessione incentivi; concessione contributi; acquisto di beni; acquisto o realizzazione di servizi; aumenti di capitale
+
+
+Dati e caratteristiche del progetto
+Dati Generali del Progetto:
+	- Anno di decisione: l’anno in cui si è ufficialmente deciso di effettuare il progetto
+	- CUP
+	- Data di chiusura prevista: la data in cui si prevede di chiudere il progetto (facoltativa)
+Dati Geografici:
+	- Localizzazioni, contiene:
+		o Stato, codice_stato
+		o Area Geografica, codice_area
+		o Regione, codice_regione
+		o Provincia, codice_provincia
+		o Comune, codice_comune
+		o Localizzazione specifica.
+Dati Finanziari:
+	- Compensi/contributi/sponsorizzazioni da privati:
+		 No
+		 Sì-totale
+		 Sì-parziale
+		Il campo è presente solo se la natura del CUP è: realizzazione di lavori pubblici (opere ed impiantistica), acquisto o realizzazione di servizi, acquisto di beni.
+	- Finanza di progetto: operazione di finanza strutturata, finalizzata in genere alla realizzazione di infrastrutture, in cui entità e durata dell’eventuale finanziamento pubblico dipendono dall'esistenza di flussi di cassa sufficienti a ripagare i costi di gestione e del servizio del debito durante un periodo predefinito della vita operativa dell’opera. Può essere:
+		 No, non ha sponsorizzazioni da privati
+		 Pura, se alla copertura finanziaria non partecipano risorse pubbliche. In questo caso la richiesta del CUP è obbligatoria e la tipologia di finanziamento è interamente privata (in questi casi si parla di “progetti d’investimento di pubblico interesse”),
+		 Assistita, quando invece alla copertura finanziaria partecipano risorse pubbliche: in questo caso la richiesta del CUP è obbligatoria. Il campo è presente solo se la natura del CUP è: realizzazione di lavori pubblici (opere ed impiantistica), acquisto o realizzazione di servizi. Se il valore di compensi/contributi/sponsorizzazioni è impostato a “Sì-totale”, allora il valore di Finanza di progetto deve essere impostato a “No”.
+	- Costo totale del progetto (in euro): Campo obbligatorio per l’inserimento del costo del progetto in euro.
+	- Tipologia di copertura finanziaria: Lista a scelta singola contenente le tipologie di copertura finanziaria del progetto. Obbligatorio. Per il progetto possono essere selezionate più tipologie di copertura finanziaria (+codice_tipologia_finanziaria).
+	- Importo del finanziamento pubblico assegnato/richiesto: Campo obbligatorio per l’inserimento dell’importo del finanziamento pubblico richiesto o assegnato in euro.
+	- Strumento di programmazione: eventuale riconducibilità del progetto ad uno strumento di programmazione negoziata o “altro” (+codice_strumento_program). Tipo; Accordo di progamma quadro; Patto territoriale; Contratto d’area; Contratto di programma; ecc.
+	- Copertura finanziaria: Comunitaria, Statale, Regionale, Provinciale, Comunale, Altra Pubblica, Privata.
+Dati Normativi:
+	- Legge obiettivo: sì/no (se il progetto viene considerato nell’ambito dello strumento legislativo della Legge Obiettivo).
+	- N. delibera CIPE: a cui fa riferimento il progetto (opzionale).
+		o Anno delibera
+	- Codifica locale: codifica del progetto utilizzata internamente dall’amministrazione responsabile per identificare il progetto (facoltativo).
+	- Normativa di riferimento: se presente la norma o l’atto normativo alla base del finanziamento del progetto (opzionale).
+		o Tipo di norma
+		o Descrizione norma
+		o Anno (di pubblicazione della norma)
+		o Numero (della norma id finanziamento)
+		o Articolo (della norma di finanziamento)
+		o Comma (della norma di finanziamento)
+Soggetti coinvolti:
+	- Beneficiario
+	- soggetto titolare
+		o Partita IVA/CF del soggetto titolare
+		o Tipologia
+	- Soggetto attuatore
+		o Partita IVA/CF del soggetto attuatore
+		o Tipologia
+	- unità organizzativa
+	- responsabile del procedimento
+	- progettista dell’opera
+	- direttore dei lavori
+	- collaudatore
+	- organismi di controllo
+	- enti finanziatori
+Altre informazioni:
+	- Tematica PNRR (solo in caso di adesione al PNRR): indica una tematica	specifica in cui rientra il progetto (scelta singola):
+		o SUB-investimento: caratterizza ulteriormente la tematica PNRR precedentemente selezionata selezionando il sub-investimento di riferimento;
+		o Target: valore e data previsti (In caso di selezione della tematica e dell’eventuale sub-investimento, il sistema richiederà l’impostazione dei valori previsionali per almeno uno dei target eventualmente previsti dalla tematica e SUB-investimento selezionati).

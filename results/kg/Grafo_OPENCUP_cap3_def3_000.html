@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "intervento", "label": "intervento", "physics": true, "shape": "box", "title": "Class: intervento\n description: Complesso di azioni o strumenti di sostegno collegati fra loro per la realizzazione di un intervento di investimento pubblico"}, {"color": "#97c2fc", "id": "progetto", "label": "progetto", "physics": true, "shape": "box", "title": "Class: progetto\n description: Unit\u00e0 cui l\u2019intervento \u00e8 funzionalmente riferito"}, {"color": "#97c2fc", "id": "natura_intervento", "label": "natura_intervento", "physics": true, "shape": "box", "title": "Class: natura_intervento\n description: Tipo di azione in cui consiste il progetto"}, {"color": "#97c2fc", "id": "acquisto_beni", "label": "acquisto_beni", "physics": true, "shape": "box", "title": "Class: acquisto_beni\n description: Decisione di un ente pubblico di acquistare beni durevoli"}, {"color": "#97c2fc", "id": "acquisto_realizzazione_servizi", "label": "acquisto_realizzazione_servizi", "physics": true, "shape": "box", "title": "Class: acquisto_realizzazione_servizi\n description: Decisione di acquistare o realizzare un servizio di sviluppo"}, {"color": "#97c2fc", "id": "realizzazione_lavori_pubblici", "label": "realizzazione_lavori_pubblici", "physics": true, "shape": "box", "title": "Class: realizzazione_lavori_pubblici\n description: Decisione di far realizzare un intervento infrastrutturale"}, {"color": "#97c2fc", "id": "concessione_contributi", "label": "concessione_contributi", "physics": true, "shape": "box", "title": "Class: concessione_contributi\n description: Decisione di aiutare un soggetto privato a realizzare un intervento di sviluppo"}, {"color": "#97c2fc", "id": "concessione_incentivi", "label": "concessione_incentivi", "physics": true, "shape": "box", "title": "Class: concessione_incentivi\n description: Decisione di concedere un finanziamento a un\u2019impresa per realizzare un intervento di sviluppo"}, {"color": "#97c2fc", "id": "sottoscrizione_aumento_capitale", "label": "sottoscrizione_aumento_capitale", "physics": true, "shape": "box", "title": "Class: sottoscrizione_aumento_capitale\n description: Partecipazione o conferimento di capitale a societ\u00e0"}, {"color": "#97c2fc", "id": "natura_dipe", "label": "natura_dipe", "physics": true, "shape": "box", "title": "Class: natura_dipe\n description: Codifica DIPE associata alla natura dell\u2019intervento"}, {"color": "#97c2fc", "id": "tipologia", "label": "tipologia", "physics": true, "shape": "box", "title": "Class: tipologia\n description: Tipologia associata alla natura selezionata"}, {"color": "#97c2fc", "id": "area_intervento", "label": "area_intervento", "physics": true, "shape": "box", "title": "Class: area_intervento\n description: Categoria omogenea descrivente l\u2019oggetto progettuale"}, {"color": "#97c2fc", "id": "settore", "label": "settore", "physics": true, "shape": "box", "title": "Class: settore\n description: Caratterizzazione dell\u2019area di intervento"}, {"color": "#97c2fc", "id": "sottosettore", "label": "sottosettore", "physics": true, "shape": "box", "title": "Class: sottosettore\n description: Approfondimento del settore"}, {"color": "#97c2fc", "id": "categoria", "label": "categoria", "physics": true, "shape": "box", "title": "Class: categoria\n description: Livello ulteriore di classificazione del sottosettore"}, {"color": "#97c2fc", "id": "indirizzo_area_riferimento", "label": "indirizzo_area_riferimento", "physics": true, "shape": "box", "title": "Class: indirizzo_area_riferimento\n description: Indirizzo o area interessata dall\u2019intervento"}, {"color": "#97c2fc", "id": "beneficiario", "label": "beneficiario", "physics": true, "shape": "box", "title": "Class: beneficiario\n description: Soggetto beneficiario di contributi o incentivi"}, {"color": "#97c2fc", "id": "impresa", "label": "impresa", "physics": true, "shape": "box", "title": "Class: impresa\n description: Impresa beneficiaria di incentivi"}, {"color": "#97c2fc", "id": "societa", "label": "societa", "physics": true, "shape": "box", "title": "Class: societa\n description: Societ\u00e0 interessata da partecipazioni o conferimenti"}, {"color": "orange", "id": "descrizione_intervento", "label": "descrizione_intervento", "physics": true, "shape": "dot", "title": "Data Property: descrizione_intervento; range: string"}, {"color": "orange", "id": "denominazione_struttura_infrastruttura", "label": "denominazione_struttura_infrastruttura", "physics": true, "shape": "dot", "title": "Data Property: denominazione_struttura_infrastruttura; range: string"}, {"color": "orange", "id": "descrizione_bene", "label": "descrizione_bene", "physics": true, "shape": "dot", "title": "Data Property: descrizione_bene; range: string"}, {"color": "orange", "id": "descrizione_servizio", "label": "descrizione_servizio", "physics": true, "shape": "dot", "title": "Data Property: descrizione_servizio; range: string"}, {"color": "orange", "id": "codice_fiscale_beneficiario", "label": "codice_fiscale_beneficiario", "physics": true, "shape": "dot", "title": "Data Property: codice_fiscale_beneficiario; range: string"}, {"color": "orange", "id": "partita_iva_impresa", "label": "partita_iva_impresa", "physics": true, "shape": "dot", "title": "Data Property: partita_iva_impresa; range: string"}, {"color": "orange", "id": "partita_iva_societa", "label": "partita_iva_societa", "physics": true, "shape": "dot", "title": "Data Property: partita_iva_societa; range: string"}, {"color": "orange", "id": "ragione_sociale_societa", "label": "ragione_sociale_societa", "physics": true, "shape": "dot", "title": "Data Property: ragione_sociale_societa; range: string"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "natura_intervento", "label": "is_a", "to": "natura_intervento"}, {"arrows": "to", "from": "intervento", "label": "ha_natura", "to": "natura_intervento"}, {"arrows": "to", "from": "natura_intervento", "label": "ha_natura_dipe", "to": "natura_dipe"}, {"arrows": "to", "from": "natura_intervento", "label": "ha_tipologia", "to": "tipologia"}, {"arrows": "to", "from": "intervento", "label": "ha_area_intervento", "to": "area_intervento"}, {"arrows": "to", "from": "area_intervento", "label": "ha_settore", "to": "settore"}, {"arrows": "to", "from": "settore", "label": "ha_sottosettore", "to": "sottosettore"}, {"arrows": "to", "from": "sottosettore", "label": "ha_categoria", "to": "categoria"}, {"arrows": "to", "from": "intervento", "label": "ha_indirizzo_area", "to": "indirizzo_area_riferimento"}, {"arrows": "to", "from": "intervento", "label": "ha_beneficiario", "to": "beneficiario"}, {"arrows": "to", "from": "intervento", "label": "ha_impresa_beneficiaria", "to": "impresa"}, {"arrows": "to", "from": "intervento", "label": "ha_societa_interessata", "to": "societa"}, {"arrows": "to", "color": "orange", "from": "intervento", "label": "DataProp", "to": "descrizione_intervento"}, {"arrows": "to", "color": "orange", "from": "intervento", "label": "DataProp", "to": "denominazione_struttura_infrastruttura"}, {"arrows": "to", "color": "orange", "from": "intervento", "label": "DataProp", "to": "descrizione_bene"}, {"arrows": "to", "color": "orange", "from": "intervento", "label": "DataProp", "to": "descrizione_servizio"}, {"arrows": "to", "color": "orange", "from": "beneficiario", "label": "DataProp", "to": "codice_fiscale_beneficiario"}, {"arrows": "to", "color": "orange", "from": "impresa", "label": "DataProp", "to": "partita_iva_impresa"}, {"arrows": "to", "color": "orange", "from": "societa", "label": "DataProp", "to": "partita_iva_societa"}, {"arrows": "to", "color": "orange", "from": "societa", "label": "DataProp", "to": "ragione_sociale_societa"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"enabled": true, "solver": "forceAtlas2Based", "forceAtlas2Based": {"gravitationalConstant": -120, "centralGravity": 0.01, "springLength": 180, "springConstant": 0.08}, "stabilization": {"enabled": true, "iterations": 400}}, "nodes": {"margin": 10, "font": {"size": 16}}, "interaction": {"dragNodes": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

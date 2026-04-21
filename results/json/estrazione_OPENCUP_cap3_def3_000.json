@@ -1,0 +1,190 @@
+{
+    "classes": [
+        {
+            "name": "intervento",
+            "description": "Complesso di azioni o strumenti di sostegno collegati fra loro per la realizzazione di un intervento di investimento pubblico"
+        },
+        {
+            "name": "progetto",
+            "description": "Unità cui l’intervento è funzionalmente riferito"
+        },
+        {
+            "name": "natura_intervento",
+            "description": "Tipo di azione in cui consiste il progetto"
+        },
+        {
+            "name": "acquisto_beni",
+            "description": "Decisione di un ente pubblico di acquistare beni durevoli",
+            "is_a": "natura_intervento"
+        },
+        {
+            "name": "acquisto_realizzazione_servizi",
+            "description": "Decisione di acquistare o realizzare un servizio di sviluppo",
+            "is_a": "natura_intervento"
+        },
+        {
+            "name": "realizzazione_lavori_pubblici",
+            "description": "Decisione di far realizzare un intervento infrastrutturale",
+            "is_a": "natura_intervento"
+        },
+        {
+            "name": "concessione_contributi",
+            "description": "Decisione di aiutare un soggetto privato a realizzare un intervento di sviluppo",
+            "is_a": "natura_intervento"
+        },
+        {
+            "name": "concessione_incentivi",
+            "description": "Decisione di concedere un finanziamento a un’impresa per realizzare un intervento di sviluppo",
+            "is_a": "natura_intervento"
+        },
+        {
+            "name": "sottoscrizione_aumento_capitale",
+            "description": "Partecipazione o conferimento di capitale a società",
+            "is_a": "natura_intervento"
+        },
+        {
+            "name": "natura_dipe",
+            "description": "Codifica DIPE associata alla natura dell’intervento"
+        },
+        {
+            "name": "tipologia",
+            "description": "Tipologia associata alla natura selezionata"
+        },
+        {
+            "name": "area_intervento",
+            "description": "Categoria omogenea descrivente l’oggetto progettuale"
+        },
+        {
+            "name": "settore",
+            "description": "Caratterizzazione dell’area di intervento"
+        },
+        {
+            "name": "sottosettore",
+            "description": "Approfondimento del settore"
+        },
+        {
+            "name": "categoria",
+            "description": "Livello ulteriore di classificazione del sottosettore"
+        },
+        {
+            "name": "indirizzo_area_riferimento",
+            "description": "Indirizzo o area interessata dall’intervento"
+        },
+        {
+            "name": "beneficiario",
+            "description": "Soggetto beneficiario di contributi o incentivi"
+        },
+        {
+            "name": "impresa",
+            "description": "Impresa beneficiaria di incentivi"
+        },
+        {
+            "name": "societa",
+            "description": "Società interessata da partecipazioni o conferimenti"
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "is_a",
+            "domain": "natura_intervento",
+            "range": "natura_intervento"
+        },
+        {
+            "label": "ha_natura",
+            "domain": "intervento",
+            "range": "natura_intervento"
+        },
+        {
+            "label": "ha_natura_dipe",
+            "domain": "natura_intervento",
+            "range": "natura_dipe"
+        },
+        {
+            "label": "ha_tipologia",
+            "domain": "natura_intervento",
+            "range": "tipologia"
+        },
+        {
+            "label": "ha_area_intervento",
+            "domain": "intervento",
+            "range": "area_intervento"
+        },
+        {
+            "label": "ha_settore",
+            "domain": "area_intervento",
+            "range": "settore"
+        },
+        {
+            "label": "ha_sottosettore",
+            "domain": "settore",
+            "range": "sottosettore"
+        },
+        {
+            "label": "ha_categoria",
+            "domain": "sottosettore",
+            "range": "categoria"
+        },
+        {
+            "label": "ha_indirizzo_area",
+            "domain": "intervento",
+            "range": "indirizzo_area_riferimento"
+        },
+        {
+            "label": "ha_beneficiario",
+            "domain": "intervento",
+            "range": "beneficiario"
+        },
+        {
+            "label": "ha_impresa_beneficiaria",
+            "domain": "intervento",
+            "range": "impresa"
+        },
+        {
+            "label": "ha_societa_interessata",
+            "domain": "intervento",
+            "range": "societa"
+        }
+    ],
+    "data_properties": [
+        {
+            "label": "descrizione_intervento",
+            "domain": "intervento",
+            "range": "string"
+        },
+        {
+            "label": "denominazione_struttura_infrastruttura",
+            "domain": "intervento",
+            "range": "string"
+        },
+        {
+            "label": "descrizione_bene",
+            "domain": "intervento",
+            "range": "string"
+        },
+        {
+            "label": "descrizione_servizio",
+            "domain": "intervento",
+            "range": "string"
+        },
+        {
+            "label": "codice_fiscale_beneficiario",
+            "domain": "beneficiario",
+            "range": "string"
+        },
+        {
+            "label": "partita_iva_impresa",
+            "domain": "impresa",
+            "range": "string"
+        },
+        {
+            "label": "partita_iva_societa",
+            "domain": "societa",
+            "range": "string"
+        },
+        {
+            "label": "ragione_sociale_societa",
+            "domain": "societa",
+            "range": "string"
+        }
+    ]
+}

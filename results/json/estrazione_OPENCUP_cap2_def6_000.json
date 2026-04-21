@@ -1,0 +1,47 @@
+{
+    "classes": [
+        {
+            "name": "cup",
+            "description": "Classificazione CUP in funzione del suo stato"
+        },
+        {
+            "name": "cup_attivo",
+            "description": "CUP di un progetto in fase di programmazione/attuazione (Delibera CIPE n. 63 del 26 novembre 2020)"
+        },
+        {
+            "name": "cup_chiuso",
+            "description": "CUP chiuso quando il progetto è completato dal punto di vista fisico, tutti i pagamenti e gli incassi sono stati eseguiti ed è completato anche l’iter procedurale (Delibera CIPE n. 63 del 26 novembre 2020)"
+        },
+        {
+            "name": "cup_cancellato",
+            "description": "CUP cancellato in quanto generato per errore materiale (Delibera CIPE n. 63 del 26 novembre 2020)"
+        },
+        {
+            "name": "cup_revocato",
+            "description": "CUP revocato perché il soggetto titolare dell’intervento decide di non realizzarlo prima della sua chiusura (Delibera CIPE n. 63 del 26 novembre 2020)"
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "is_a",
+            "domain": "cup_attivo",
+            "range": "cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "cup_chiuso",
+            "range": "cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "cup_cancellato",
+            "range": "cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "cup_revocato",
+            "range": "cup"
+        }
+    ],
+    "data_properties": []
+}

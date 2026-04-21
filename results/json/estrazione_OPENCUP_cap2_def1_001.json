@@ -1,0 +1,109 @@
+{
+    "classes": [
+        {
+            "name": "atto_amministrativo",
+            "description": "Atto adottato da una pubblica amministrazione"
+        },
+        {
+            "name": "atto_amministrativo_di_investimento_pubblico",
+            "description": "Atto amministrativo anche di natura regolamentare che dispone il finanziamento pubblico o autorizza l'esecuzione di progetti di investimento pubblico",
+            "is_a": "atto_amministrativo"
+        },
+        {
+            "name": "pubblica_amministrazione",
+            "description": "Soggetto di cui all'art. 1, comma 2, d. lgs. n. 165/2001"
+        },
+        {
+            "name": "codice_unico_di_progetto_cup",
+            "description": "Codice che permette di tracciare e monitorare il progetto"
+        },
+        {
+            "name": "progetto_di_investimento_pubblico",
+            "description": "Progetto oggetto di finanziamento o autorizzazione nell’ambito dell’atto amministrativo di investimento pubblico"
+        },
+        {
+            "name": "programma_di_spesa",
+            "description": "Programma cui sono associati i progetti autorizzati con indicazione dei finanziamenti concessi"
+        },
+        {
+            "name": "finanziamento_pubblico",
+            "description": "Finanziamento concesso a valere su specifiche misure"
+        },
+        {
+            "name": "data_di_efficacia",
+            "description": "Data di efficacia dei finanziamenti"
+        },
+        {
+            "name": "valore_complessivo_investimento",
+            "description": "Valore complessivo dei singoli investimenti"
+        },
+        {
+            "name": "delibera",
+            "description": "Forma in cui può esplicarsi l’atto amministrativo di investimento pubblico",
+            "is_a": "atto_amministrativo_di_investimento_pubblico"
+        },
+        {
+            "name": "provvedimento_dirigenziale",
+            "description": "Forma in cui può esplicarsi l’atto amministrativo di investimento pubblico",
+            "is_a": "atto_amministrativo_di_investimento_pubblico"
+        },
+        {
+            "name": "decreto",
+            "description": "Forma in cui può esplicarsi l’atto amministrativo di investimento pubblico",
+            "is_a": "atto_amministrativo_di_investimento_pubblico"
+        },
+        {
+            "name": "provvedimento_di_approvazione_di_graduatorie",
+            "description": "Forma in cui può esplicarsi l’atto amministrativo di investimento pubblico",
+            "is_a": "atto_amministrativo_di_investimento_pubblico"
+        },
+        {
+            "name": "graduatoria",
+            "description": "Graduatoria oggetto di approvazione nell’atto"
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "adottato_da",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "pubblica_amministrazione"
+        },
+        {
+            "label": "dispone_finanziamento",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "finanziamento_pubblico"
+        },
+        {
+            "label": "autorizza_progetto",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "progetto_di_investimento_pubblico"
+        },
+        {
+            "label": "associa_cup",
+            "domain": "atto_amministrativo_di_investimento_pubblico",
+            "range": "codice_unico_di_progetto_cup"
+        },
+        {
+            "label": "traccia_progetto",
+            "domain": "codice_unico_di_progetto_cup",
+            "range": "progetto_di_investimento_pubblico"
+        },
+        {
+            "label": "riferito_a_programma",
+            "domain": "progetto_di_investimento_pubblico",
+            "range": "programma_di_spesa"
+        }
+    ],
+    "data_properties": [
+        {
+            "label": "ha_data_di_efficacia",
+            "domain": "finanziamento_pubblico",
+            "range": "data"
+        },
+        {
+            "label": "ha_valore_complessivo",
+            "domain": "progetto_di_investimento_pubblico",
+            "range": "numero"
+        }
+    ]
+}

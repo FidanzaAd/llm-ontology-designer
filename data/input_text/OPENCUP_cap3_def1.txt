@@ -1,0 +1,52 @@
+Il Codice Unico di Progetto (CUP - codice alfanumerico univoco, costituito da quindici caratteri, che identifica ciascun intervento/progetto di investimento pubblico, e che deve essere ad esso associato da parte delle amministrazioni titolari, soggetti attuatori, dei medesimi interventi, chiedendone la generazione nel sistema informativo CUP, previo accreditamento allo stesso sistema), è caratterizzato da alcuni aspetti di dettaglio, come:
+- il CUP non varia nel corso della realizzazione del progetto e lo segue fino al suo completamento;
+- Gli atti amministrativi sono nulli in assenza dei corrispondenti CUP;
+- Ad ogni CUP corrisponde un set di dati: il già citato corredo informativo, informazioni riferite al progetto e agli interventi di realizzazione del progetto.
+
+Il CUP può essere:
+- Provvisorio: CUP facoltativo, e privo di rilevanza amministrativa, che alcune amministrazioni utilizzano per censire il progetto sin dalla nascita dell’idea progettuale, quando ancora non sono immaginabili i valori riguardanti il costo e il finanziamento dell’investimento. Dal punto di vista tecnico, la stringa di codice contiene un carattere in meno del CUP definitivo e i primi tre sono caratterizzati dalle lettere PROV esempio: PROV0000019464
+- Completo: codice che si attribuisce ad un progetto di investimento pubblico al momento della decisione del finanziamento, ovvero della definizione del quadro economico di riferimento. Si dice “completo” perché corredato di tutte le informazioni richieste dal sistema CUP, e individua le risorse per realizzare il progetto. Tutte queste informazioni sono pubbliche, ad eccezione di quelle riguardanti l’utente che ha richiesto il codice.
+
+Il cup completo può suddividersi ulteriormente in:
+	o Valido: CUP definitivo generato ed esistente all’interno del sistema informativo CUP
+	o Corretto: CUP definitivo allegato ad un atto di finanziamento/autorizzazione di investimenti pubblici, che possiede le caratteristiche necessarie per identificare un  intervento/progetto, che l’amministrazione titolare manifesta di voler realizzare
+	o Coerente con il programma di spesa: CUP allegato ad un atto amministrativo di finanziamento/autorizzazione di investimenti pubblici, la cui classificazione, riportata nell’anagrafica del sistema CUP, rispetta i vincoli disposti dalla normativa, che istituisce e regola il programma di spesa ai sensi del quale viene emanato l’atto stesso
+	
+- Cumulativo: CUP afferente a molteplici progetti d’investimento pubblico che sono parte di un unico complesso di interventi; il soggetto responsabile può richiedere un CUP cumulativo quando i progetti consistono nella concessione di contributi a soggetti che non sono unità produttive e in presenza di unico provvedimento amministrativo; Inoltre si evidenziano i vincoli relativi al costo di ciascun progetto d’investimento pubblico che deve avere un costo non superiore a 50.000€; l’importo totale del costo di tutti gli interventi non deve superare l’importo di 1.000.000€.
+- Master: CUP di riferimento nel caso di progetti con un livello di complessità realizzativa che richiede l’esecuzione mediante un’articolazione di progetti distinti, ma connessi sotto il profilo logico funzionale o temporale; all’atto della richiesta del CUP per ciascuno di essi, i soggetti responsabili registrano il riferimento al CUP relativo alla prima articolazione inserita nel sistema che, così, assurge a CUP Master del progetto globale. Il CUP Master risulta coincidente, dunque, con il codice del progetto che avvia la fase realizzativa dello schema progettuale globale ed è, pertanto, di norma assegnato, come CUP definitivo, al primo fra i progetti integrati che consegue un finanziamento pubblico, al quale è possibile riconnettere tutti i successivi progetti afferenti quello globale. Il collegamento dei singoli CUP di progetto al CUP Master consente la riconducibilità di tale serie di progetti al progetto complesso e quindi la sommabilità delle informazioni relative ai progetti attuativi.
+vincoli: qualunque CUP, attivo o chiuso, non già collegato a un Master, non Cumulativo, e, nel caso di lavori pubblici, non relativo a diverse infrastrutture, e, più in generale, non riguardante oggetti progettuali differenti, può diventare Master, nel momento della registrazione di un secondo progetto che riguarda lo stesso "oggetto". Il CUP Master, quindi, evidenzia l'esistenza, fra diversi progetti d'investimento pubblico, di collegamenti sia temporali sia funzionali.
+
+Il CUP può avere il seguente stato:
+- Generato/attivo: CUP di un progetto in fase di programmazione/attuazione;
+- Chiuso: CUP chiuso quando il progetto è completato dal punto di vista fisico, tutti i pagamenti e gli incassi sono stati eseguiti ed è completato anche l’iter procedurale;
+- Revocato: CUP revocato perché il soggetto titolare dell’intervento decide di non realizzarlo prima della sua chiusura;
+- Cancellato: CUP cancellato in quanto generato per errore materiale.
+I CUP con stato “revocato” o “cancellato” non sono pubblicati all'interno del portale ma vengono inseriti in un apposito file scaricabile all'interno della sezione open data.
+
+Il CUP può avere la seguente tipologia:
+o Normale
+o Collegato: quando il CUP è associato ad un CUP Master. Ragioni del collegamento: Campo editabile contenente la denominazione dell’oggetto progettuale di riferimento, ovvero dell’obiettivo perseguito, cui si riferisce la “catena” di progetti, collegati grazie al CUP Master.
+o Master: Codice CUP del progetto master a cui si vuole collegare un altro progetto.
+
+Un CUP può essere collegato ad altri CUP attraverso specifiche relazioni:
+- Scissione: si verifica quando il soggetto responsabile (o ente titolare) di un progetto ha facoltà di ritornare, in un momento successivo, sulla decisione iniziale di programmazione dell’intervento, scomponendo l’iniziativa in più progetti, ciascuno dei quali caratterizzato da un quadro economico di spesa distinto. In questo caso sarà necessario richiedere alla Struttura di supporto CUP la scissione del CUP iniziale in due o più codici. Il CUP associato al progetto iniziale sarà, a seconda dei casi, revocato o cancellato;
+- Fusione: si verifica quando l’ente accorpa più progetti in un unico progetto e, quindi, dovrà avere cura di utilizzare, secondo le medesime modalità sopra descritte, la funzione di «fusione dei CUP»; i CUP dei singoli interventi che devono essere fusi sono revocati in favore di un nuovo codice CUP.
+- Sostituzione: si verifica quando cambia in maniera sostanziale il progetto, ovvero quando cambia l’oggetto della decisione amministrativa correlata alla finalità, alla classificazione (tranne in casi di errore), alla localizzazione o al perimetro dell’intervento; in caso di sostituzione il CUP viene revocato e viene generato un nuovo CUP sostitutivo.
+Queste operazioni sono concordate con la Struttura di Supporto nell’ambito della gestione del sistema CUP.
+
+Il CUP può essere richiesto da due tipologie di soggetti:
+- Soggetto responsabile/ Soggetto titolare di progetto;
+Soggetto cui compete l'attuazione degli interventi e, quindi, responsabile della richiesta del CUP:
+	a. per la realizzazione dei lavori pubblici: la stazione appaltante, il concessionario o il Comune;
+	b. per la concessione di incentivi a unità produttive: il soggetto pubblico cui spetta la competenza per la concessione delle risorse pubbliche o suo delegato (anche privato);
+	c. per la concessione di aiuti a soggetti diversi dalle unità produttive: l’Ente pubblico titolare della concessione;
+	d. per l’acquisto di beni e servizi o partecipazioni azionare/conferimenti capitale: l’ente pubblico titolare della decisione di spesa;
+	e. per la realizzazione di servizi: l’ente pubblico che realizza il progetto.
+Soggetto titolare del progetto e soggetto richiedente il CUP coincidono salvo il caso di richiesta CUP su delega rilasciata al soggetto “concentratore”. Rimane responsabile sia dell’attivazione della richiesta del codice sia della correttezza delle informazioni inserite.
+- Soggetto concentratore: soggetto pubblico abilitato a svolgere le funzioni di richiesta del CUP su delega del soggetto titolare, sulla base di specifici accordi e dandone evidenza nel sistema, fermo restando le responsabilità del titolare per quanto concerne l’obbligo di richiesta di assegnazione del CUP e la correttezza dei dati inseriti nel sistema. Dopo l’assegnazione del CUP, il soggetto concentratore comunica il codice all’utente di riferimento che rappresenta il soggetto responsabile. L’utente di riferimento può intervenire per eventuali correzioni o errori.
+
+Dati temporali:
+- Data di generazione CUP: Data in cui è stato generato il codice CUP.
+- Data ultima modifica utente: data in cui l'utente del Sistema CUP, titolare del progetto/intervento ha effettuato l'ultima modifica al corredo informativo.
+- data ultima modifica SSC: Data in cui la SSC (Struttura di supporto CUP) ha effettuato l'ultima modifica al corredo informativo del progetto/intervento.
+- Data di chiusura/revoca: data in cui il progetto/intervento ha assunto lo stato Chiuso o Revocato.

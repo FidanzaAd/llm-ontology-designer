@@ -1,0 +1,13 @@
+Sistema di monitoraggio degli investimenti pubblici (MIP) istituito presso il Comitato interministeriale per la programmazione economica (CIPESS), con il compito di fornire tempestivamente informazioni sull'attuazione delle politiche di sviluppo, con particolare riferimento ai programmi cofinanziati con i fondi strutturali europei, sulla base dell'attività di monitoraggio. Tale attività concerne le modalità attuative dei programmi di investimento e l'avanzamento tecnico-procedurale, finanziario e fisico dei singoli interventi (Art. 1 c. 5, L. n. 144/1999).
+
+Soggetto attuatore: soggetto pubblico o privato che provvede alla realizzazione degli interventi previsti dal PNRR (art. 1, comma 4, lett. o), DL n. 77/2021).
+Soggetto titolare di progetto: Soggetto cui compete l'attuazione degli interventi e, quindi, responsabile della richiesta del CUP:
+a. per la realizzazione dei lavori pubblici: la stazione appaltante, il concessionario o il Comune;
+b. per la concessione di incentivi a unità produttive: il soggetto pubblico cui spetta la competenza per la concessione delle risorse pubbliche o suo delegato (anche privato); 
+c. per la concessione di aiuti a soggetti diversi dalle unità produttive: l’Ente pubblico titolare della concessione; 
+d. per l’acquisto di beni e servizi o partecipazioni azionare/conferimenti capitale: l’ente pubblico titolare della decisione di spesa; 
+e. per la realizzazione di servizi: l’ente pubblico che realizza il progetto.
+Soggetto titolare del progetto e soggetto richiedente il CUP coincidono salvo il caso di richiesta CUP su delega rilasciata al soggetto “concentratore”.
+(Delibera CIPE n. 143 del 27 dicembre 2002, richiamata dalla Delibera CIPE n. 63 del 26 novembre 2020).
+Soggetto concentratore: Soggetto pubblico abilitato a svolgere le funzioni di richiesta del CUP su delega del soggetto titolare, sulla base di specifici accordi e dandone evidenza nel sistema, ferme restando le responsabilità del titolare per quanto concerne l’obbligo di richiesta di assegnazione del CUP e la correttezza dei dati inseriti nel sistema (Delibera CIPE n. 63 del 26 novembre 2020).
+ 

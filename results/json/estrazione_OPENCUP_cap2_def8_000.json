@@ -1,0 +1,33 @@
+{
+    "classes": [
+        {
+            "name": "cup",
+            "description": ""
+        },
+        {
+            "name": "cup_cumulativo",
+            "description": "CUP afferente a molteplici progetti d’investimento pubblico che sono parte di un unico complesso di interventi; può essere richiesto quando i progetti consistono nella concessione di contributi a soggetti che non sono unità produttive e in presenza di unico provvedimento amministrativo."
+        },
+        {
+            "name": "cup_master",
+            "description": "CUP di riferimento per progetti con un livello di complessità realizzativa articolato in progetti distinti ma connessi; coincide con il codice del progetto che avvia la fase realizzativa dello schema progettuale globale ed è assegnato al primo progetto integrato che consegue un finanziamento pubblico."
+        },
+        {
+            "name": "progetto_di_investimento_pubblico",
+            "description": "Complesso di azioni o strumenti di sostegno collegati fra loro per la realizzazione di un intervento di investimento pubblico, caratterizzato da un decisore pubblico, finanziamento pubblico anche parziale, un comune obiettivo di sviluppo economico e sociale e un tempo specificato."
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "is_a",
+            "domain": "cup_cumulativo",
+            "range": "cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "cup_master",
+            "range": "cup"
+        }
+    ],
+    "data_properties": []
+}

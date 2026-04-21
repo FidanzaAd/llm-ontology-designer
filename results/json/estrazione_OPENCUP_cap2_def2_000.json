@@ -1,0 +1,20 @@
+{
+    "classes": [
+        {
+            "name": "beneficiario_del_finanziamento",
+            "description": "Soggetto pubblico o privato che, ai sensi delle norme dispositive relative ai programmi di spesa, beneficia di finanziamento per specifici progetti di investimento"
+        },
+        {
+            "name": "soggetto_pubblico"
+        },
+        {
+            "name": "soggetto_privato"
+        },
+        {
+            "name": "cipess",
+            "description": "Comitato interministeriale per la programmazione economica e lo sviluppo sostenibile che definisce la procedura telematica di richiesta del CUP e disciplina le modalità e le procedure attuative del Sistema CUP"
+        }
+    ],
+    "object_properties": [],
+    "data_properties": []
+}

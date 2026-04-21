@@ -1,0 +1,62 @@
+{
+    "classes": [
+        {
+            "name": "collegamento_cup",
+            "description": "Collegamenti tra CUP"
+        },
+        {
+            "name": "cup",
+            "description": "Codice Unico di Progetto"
+        },
+        {
+            "name": "sostituzione_cup",
+            "description": "Sostituzione del CUP con altro in caso di cambiamento sostanziale del progetto o dell’oggetto della decisione amministrativa correlata alla finalità, alla classificazione, alla localizzazione o al perimetro dell’intervento"
+        },
+        {
+            "name": "scissione_cup",
+            "description": "Scomposizione del CUP in due o più CUP quando il soggetto responsabile o ente titolare decide di scomporre un’iniziativa in più progetti caratterizzati da un quadro economico di spesa distinto"
+        },
+        {
+            "name": "fusione_cup",
+            "description": "Assegnazione di un CUP unico a più progetti originariamente già assegnatari di propri CUP nel caso di loro accorpamento in un unico progetto"
+        },
+        {
+            "name": "progetto",
+            "description": "Iniziativa a cui è associato un CUP"
+        },
+        {
+            "name": "soggetto_responsabile",
+            "description": "Soggetto responsabile di un progetto"
+        },
+        {
+            "name": "ente_titolare",
+            "description": "Ente titolare di un progetto"
+        },
+        {
+            "name": "struttura_di_supporto_cup",
+            "description": "Struttura che gestisce le funzioni di modifica e scissione del CUP"
+        },
+        {
+            "name": "quadro_economico_di_spesa",
+            "description": "Quadro economico di spesa distinto per ciascun progetto risultante dalla scissione"
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "is_a",
+            "domain": "sostituzione_cup",
+            "range": "collegamento_cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "scissione_cup",
+            "range": "collegamento_cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "fusione_cup",
+            "range": "collegamento_cup"
+        }
+    ],
+    "data_properties": []
+}

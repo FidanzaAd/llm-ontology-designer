@@ -1,0 +1,7 @@
+Collegamenti tra CUP
+•	Sostituzione CUP
+Sostituzione del CUP con altro in caso di cambiamento sostanziale del progetto ovvero dell’oggetto della decisione amministrativa correlata alla finalità, alla classificazione (tranne in casi di errore), alla localizzazione o al perimetro dell’intervento (Delibera n. 63 del 26 novembre 2020).
+•	Scissione CUP
+Scomposizione CUP in due o più CUP, da parte della Struttura di supporto CUP (tramite l’apposita funzione presente nell’applicativo CUP «Invio richiesta modifica CUP»), allorquando il soggetto responsabile (o ente titolare) di un progetto decida di scomporre l’iniziativa in più progetti, ciascuno dei quali caratterizzato da un quadro economico di spesa distinto. Il CUP associato al progetto iniziale viene revocato o cancellato (Delibera n. 63 del 26 novembre 2020).
+•	Fusione CUP
+Assegnazione CUP a più progetti (mediante la funzione di «fusione dei CUP» del sistema CUP), originariamente già assegnatari di un proprio CUP, nel caso di loro accorpamento, da parte del soggetto titolare, in un unico progetto (Delibera n. 63 del 26 novembre 2020).

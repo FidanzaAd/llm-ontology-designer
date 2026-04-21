@@ -1,0 +1,46 @@
+{
+    "classes": [
+        {
+            "name": "beneficiario_finanziamento",
+            "description": "Soggetto pubblico o privato che beneficia di finanziamento per specifici progetti di investimento ai sensi delle norme dispositive relative ai programmi di spesa (Delibera CIPE n. 63 del 26 novembre 2020)."
+        },
+        {
+            "name": "soggetto_pubblico_o_privato",
+            "description": "Soggetto pubblico o privato."
+        },
+        {
+            "name": "cipess",
+            "description": "Comitato interministeriale per la programmazione economica e lo sviluppo sostenibile."
+        },
+        {
+            "name": "procedura_telematica_richiesta_cup",
+            "description": "Procedura telematica di richiesta del CUP."
+        },
+        {
+            "name": "modalita_e_procedure_attuative",
+            "description": "Modalità e procedure attuative del Sistema CUP."
+        },
+        {
+            "name": "sistema_cup",
+            "description": "Sistema CUP."
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "is_a",
+            "domain": "beneficiario_finanziamento",
+            "range": "soggetto_pubblico_o_privato"
+        },
+        {
+            "label": "definisce",
+            "domain": "cipess",
+            "range": "procedura_telematica_richiesta_cup"
+        },
+        {
+            "label": "disciplina",
+            "domain": "cipess",
+            "range": "modalita_e_procedure_attuative"
+        }
+    ],
+    "data_properties": []
+}

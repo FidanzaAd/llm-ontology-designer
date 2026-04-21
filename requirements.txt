@@ -1,0 +1,10 @@
+streamlit>=1.25
+openai>=1.0
+python-dotenv>=1.0
+rdflib>=6.2
+pyvis>=0.3.2
+pandas>=1.5
+azure-identity
+jupyter
+azure-monitor-opentelemetry
+azure-ai-projects>=2.0.0

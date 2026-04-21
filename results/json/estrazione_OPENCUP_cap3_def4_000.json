@@ -1,0 +1,264 @@
+{
+    "classes": [
+        {
+            "name": "soggetto_titolare_responsabile",
+            "description": "Soggetto cui compete l'attuazione degli interventi e responsabile della richiesta del CUP."
+        },
+        {
+            "name": "soggetto_concentratore",
+            "description": "Soggetto pubblico abilitato a svolgere le funzioni di richiesta del CUP su delega del soggetto titolare."
+        },
+        {
+            "name": "soggetto_beneficiario",
+            "description": "Soggetto pubblico o privato che beneficia di finanziamento per specifici progetti di investimento."
+        },
+        {
+            "name": "utente",
+            "description": "Persona fisica che interagisce con il sistema CUP."
+        },
+        {
+            "name": "utente_richiedente",
+            "description": "Utente che ha richiesto il CUP."
+        },
+        {
+            "name": "utente_riferimento",
+            "description": "Utente che interagisce con il sistema CUP per informazioni o manutenzione del corredo informativo."
+        },
+        {
+            "name": "utente_ultima_modifica",
+            "description": "Utente che ha corretto o integrato per ultimo i dati del corredo informativo di un progetto."
+        },
+        {
+            "name": "unita_organizzativa",
+            "description": "Servizio a cui appartiene l’utente che interagisce con il sistema CUP."
+        },
+        {
+            "name": "categoria",
+            "description": "Categoria con cui è classificato il soggetto nell'ambito del Sistema CUP."
+        },
+        {
+            "name": "sottocategoria",
+            "description": "Sottocategoria che specifica ulteriormente la categoria del soggetto."
+        },
+        {
+            "name": "area",
+            "description": "Area in cui è classificato il soggetto titolare nell'ambito di OpenCUP."
+        },
+        {
+            "name": "natura_persona_giuridica",
+            "description": "Indica se il soggetto è pubblico o privato."
+        },
+        {
+            "name": "localizzazione",
+            "description": "Localizzazione del soggetto."
+        },
+        {
+            "name": "delega_richiesta_cup",
+            "description": "Delega che abilita il soggetto concentratore a richiedere il CUP per conto del soggetto titolare."
+        },
+        {
+            "name": "codice_ateco",
+            "description": "Codice ATECO associato al soggetto beneficiario."
+        },
+        {
+            "name": "tipo_indirizzo"
+        },
+        {
+            "name": "indirizzo"
+        },
+        {
+            "name": "civico"
+        },
+        {
+            "name": "localita"
+        },
+        {
+            "name": "provincia"
+        },
+        {
+            "name": "comune"
+        },
+        {
+            "name": "cap"
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "is_a",
+            "domain": "utente_richiedente",
+            "range": "utente"
+        },
+        {
+            "label": "is_a",
+            "domain": "utente_riferimento",
+            "range": "utente"
+        },
+        {
+            "label": "is_a",
+            "domain": "utente_ultima_modifica",
+            "range": "utente"
+        },
+        {
+            "label": "ha_categoria",
+            "domain": "soggetto_titolare_responsabile",
+            "range": "categoria"
+        },
+        {
+            "label": "ha_sottocategoria",
+            "domain": "soggetto_titolare_responsabile",
+            "range": "sottocategoria"
+        },
+        {
+            "label": "ha_area",
+            "domain": "soggetto_titolare_responsabile",
+            "range": "area"
+        },
+        {
+            "label": "ha_natura_giuridica",
+            "domain": "soggetto_titolare_responsabile",
+            "range": "natura_persona_giuridica"
+        },
+        {
+            "label": "ha_localizzazione",
+            "domain": "soggetto_titolare_responsabile",
+            "range": "localizzazione"
+        },
+        {
+            "label": "ha_categoria",
+            "domain": "soggetto_concentratore",
+            "range": "categoria"
+        },
+        {
+            "label": "ha_sottocategoria",
+            "domain": "soggetto_concentratore",
+            "range": "sottocategoria"
+        },
+        {
+            "label": "ha_natura_giuridica",
+            "domain": "soggetto_concentratore",
+            "range": "natura_persona_giuridica"
+        },
+        {
+            "label": "ha_localizzazione",
+            "domain": "soggetto_concentratore",
+            "range": "localizzazione"
+        },
+        {
+            "label": "ha_delega",
+            "domain": "soggetto_concentratore",
+            "range": "delega_richiesta_cup"
+        },
+        {
+            "label": "ha_natura_giuridica",
+            "domain": "soggetto_beneficiario",
+            "range": "natura_persona_giuridica"
+        },
+        {
+            "label": "ha_codice_ateco",
+            "domain": "soggetto_beneficiario",
+            "range": "codice_ateco"
+        },
+        {
+            "label": "ha_localizzazione",
+            "domain": "unita_organizzativa",
+            "range": "localizzazione"
+        }
+    ],
+    "data_properties": [
+        {
+            "label": "denominazione",
+            "domain": "soggetto_titolare_responsabile",
+            "range": "string"
+        },
+        {
+            "label": "codice_categoria",
+            "domain": "categoria",
+            "range": "string"
+        },
+        {
+            "label": "codice_sottocategoria",
+            "domain": "sottocategoria",
+            "range": "string"
+        },
+        {
+            "label": "codice_area",
+            "domain": "area",
+            "range": "string"
+        },
+        {
+            "label": "codice_fiscale_partita_iva",
+            "domain": "soggetto_titolare_responsabile",
+            "range": "string"
+        },
+        {
+            "label": "denominazione",
+            "domain": "soggetto_concentratore",
+            "range": "string"
+        },
+        {
+            "label": "codice_fiscale_partita_iva",
+            "domain": "soggetto_concentratore",
+            "range": "string"
+        },
+        {
+            "label": "numero_delega",
+            "domain": "delega_richiesta_cup",
+            "range": "string"
+        },
+        {
+            "label": "denominazione_soggetto_concentratore",
+            "domain": "delega_richiesta_cup",
+            "range": "string"
+        },
+        {
+            "label": "denominazione_soggetto_responsabile",
+            "domain": "delega_richiesta_cup",
+            "range": "string"
+        },
+        {
+            "label": "tipo_delega",
+            "domain": "delega_richiesta_cup",
+            "range": "string"
+        },
+        {
+            "label": "data_inserimento",
+            "domain": "delega_richiesta_cup",
+            "range": "date"
+        },
+        {
+            "label": "data_modifica",
+            "domain": "delega_richiesta_cup",
+            "range": "date"
+        },
+        {
+            "label": "stato_della_delega",
+            "domain": "delega_richiesta_cup",
+            "range": "string"
+        },
+        {
+            "label": "denominazione",
+            "domain": "soggetto_beneficiario",
+            "range": "string"
+        },
+        {
+            "label": "codice_fiscale_partita_iva",
+            "domain": "soggetto_beneficiario",
+            "range": "string"
+        },
+        {
+            "label": "denominazione",
+            "domain": "unita_organizzativa",
+            "range": "string"
+        },
+        {
+            "label": "codice_fiscale_partita_iva",
+            "domain": "unita_organizzativa",
+            "range": "string"
+        },
+        {
+            "label": "email",
+            "domain": "unita_organizzativa",
+            "range": "string"
+        }
+    ]
+}

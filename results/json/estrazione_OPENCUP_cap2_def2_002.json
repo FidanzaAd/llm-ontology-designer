@@ -1,0 +1,20 @@
+{
+    "classes": [
+        {
+            "name": "beneficiario_del_finanziamento",
+            "description": "Soggetto pubblico o privato che beneficia di finanziamento per specifici progetti di investimento"
+        },
+        {
+            "name": "soggetto_pubblico"
+        },
+        {
+            "name": "soggetto_privato"
+        },
+        {
+            "name": "cipess",
+            "description": "Comitato interministeriale per la programmazione economica e lo sviluppo sostenibile"
+        }
+    ],
+    "object_properties": [],
+    "data_properties": []
+}

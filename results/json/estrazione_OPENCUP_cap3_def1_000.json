@@ -1,0 +1,247 @@
+{
+    "classes": [
+        {
+            "name": "codice_unico_progetto",
+            "description": "Codice alfanumerico univoco di quindici caratteri che identifica ciascun intervento o progetto di investimento pubblico"
+        },
+        {
+            "name": "progetto_investimento_pubblico",
+            "description": "Intervento o progetto cui è associato un CUP"
+        },
+        {
+            "name": "corredo_informativo",
+            "description": "Set di dati riferiti al progetto e agli interventi di realizzazione del progetto"
+        },
+        {
+            "name": "stato_cup",
+            "description": "Stato del CUP"
+        },
+        {
+            "name": "generato_attivo",
+            "description": "CUP di un progetto in fase di programmazione o attuazione"
+        },
+        {
+            "name": "chiuso",
+            "description": "CUP relativo a progetto completato fisicamente, economicamente e procedurale"
+        },
+        {
+            "name": "revocato",
+            "description": "CUP revocato perché il soggetto titolare decide di non realizzare il progetto"
+        },
+        {
+            "name": "cancellato",
+            "description": "CUP cancellato per errore materiale"
+        },
+        {
+            "name": "tipologia_cup",
+            "description": "Tipologia del CUP"
+        },
+        {
+            "name": "normale"
+        },
+        {
+            "name": "collegato",
+            "description": "CUP associato a un CUP Master"
+        },
+        {
+            "name": "master",
+            "description": "Codice del progetto Master cui si collegano altri progetti"
+        },
+        {
+            "name": "provvisorio",
+            "description": "CUP facoltativo e privo di rilevanza amministrativa"
+        },
+        {
+            "name": "completo",
+            "description": "CUP corredato di tutte le informazioni richieste dal sistema CUP"
+        },
+        {
+            "name": "valido",
+            "description": "CUP definitivo generato ed esistente nel sistema informativo CUP"
+        },
+        {
+            "name": "corretto",
+            "description": "CUP definitivo allegato ad atto di finanziamento che identifica correttamente un intervento"
+        },
+        {
+            "name": "coerente_con_programma_spesa",
+            "description": "CUP la cui classificazione rispetta i vincoli del programma di spesa"
+        },
+        {
+            "name": "cumulativo",
+            "description": "CUP afferente a molteplici progetti parte di un unico complesso di interventi"
+        },
+        {
+            "name": "struttura_supporto_cup",
+            "description": "Struttura responsabile della gestione del sistema CUP"
+        },
+        {
+            "name": "soggetto_responsabile",
+            "description": "Soggetto cui compete l'attuazione degli interventi e la richiesta del CUP"
+        },
+        {
+            "name": "soggetto_concentratore",
+            "description": "Soggetto pubblico delegato a richiedere il CUP per conto del titolare"
+        },
+        {
+            "name": "relazione_cup",
+            "description": "Relazione tra CUP"
+        },
+        {
+            "name": "scissione",
+            "description": "Operazione che scompone un progetto in più progetti con nuovi CUP"
+        },
+        {
+            "name": "fusione",
+            "description": "Operazione che accorpa più progetti in un unico progetto con nuovo CUP"
+        },
+        {
+            "name": "sostituzione",
+            "description": "Operazione che genera un nuovo CUP per variazioni sostanziali del progetto"
+        }
+    ],
+    "object_properties": [
+        {
+            "label": "is_a",
+            "domain": "generato_attivo",
+            "range": "stato_cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "chiuso",
+            "range": "stato_cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "revocato",
+            "range": "stato_cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "cancellato",
+            "range": "stato_cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "normale",
+            "range": "tipologia_cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "collegato",
+            "range": "tipologia_cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "master",
+            "range": "tipologia_cup"
+        },
+        {
+            "label": "is_a",
+            "domain": "provvisorio",
+            "range": "codice_unico_progetto"
+        },
+        {
+            "label": "is_a",
+            "domain": "completo",
+            "range": "codice_unico_progetto"
+        },
+        {
+            "label": "is_a",
+            "domain": "valido",
+            "range": "completo"
+        },
+        {
+            "label": "is_a",
+            "domain": "corretto",
+            "range": "completo"
+        },
+        {
+            "label": "is_a",
+            "domain": "coerente_con_programma_spesa",
+            "range": "completo"
+        },
+        {
+            "label": "is_a",
+            "domain": "cumulativo",
+            "range": "codice_unico_progetto"
+        },
+        {
+            "label": "richiede",
+            "domain": "progetto_investimento_pubblico",
+            "range": "codice_unico_progetto"
+        },
+        {
+            "label": "ha_stato",
+            "domain": "codice_unico_progetto",
+            "range": "stato_cup"
+        },
+        {
+            "label": "ha_tipologia",
+            "domain": "codice_unico_progetto",
+            "range": "tipologia_cup"
+        },
+        {
+            "label": "ha_corredo_informativo",
+            "domain": "codice_unico_progetto",
+            "range": "corredo_informativo"
+        },
+        {
+            "label": "richiesto_da",
+            "domain": "codice_unico_progetto",
+            "range": "soggetto_responsabile"
+        },
+        {
+            "label": "richiesto_su_delega",
+            "domain": "codice_unico_progetto",
+            "range": "soggetto_concentratore"
+        },
+        {
+            "label": "ha_relazione",
+            "domain": "codice_unico_progetto",
+            "range": "relazione_cup"
+        },
+        {
+            "label": "e_scisso_in",
+            "domain": "scissione",
+            "range": "codice_unico_progetto"
+        },
+        {
+            "label": "e_fuso_in",
+            "domain": "fusione",
+            "range": "codice_unico_progetto"
+        },
+        {
+            "label": "sostituisce",
+            "domain": "sostituzione",
+            "range": "codice_unico_progetto"
+        }
+    ],
+    "data_properties": [
+        {
+            "label": "codice_testuale",
+            "domain": "codice_unico_progetto",
+            "range": "stringa alfanumerica di quindici caratteri"
+        },
+        {
+            "label": "data_generazione",
+            "domain": "codice_unico_progetto",
+            "range": "data"
+        },
+        {
+            "label": "data_ultima_modifica_utente",
+            "domain": "codice_unico_progetto",
+            "range": "data"
+        },
+        {
+            "label": "data_ultima_modifica_ssc",
+            "domain": "codice_unico_progetto",
+            "range": "data"
+        },
+        {
+            "label": "data_chiusura_revoca",
+            "domain": "codice_unico_progetto",
+            "range": "data"
+        }
+    ]
+}
